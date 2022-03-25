@@ -2,7 +2,11 @@
 
 function calcAge(birthYear) {
     const age = new Date().getFullYear() - birthYear;
-    console.log(firstName + ' is ' + age + ' years old.');
+    function printAge() {
+        const output = `${firstName}, you are ${age} years old, born in ${birthYear}`;
+        console.log(output);
+    }
+    printAge();
     return age;
 }
 
